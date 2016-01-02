@@ -1,0 +1,8 @@
+
+
+- po nacisnieciu przycisku input jest czyszczony
+- ostatnio wprowadzone słowo ma pokazac sie na dole listy
+- wszystkie wprowadzone słowa mają sie pokazać na liście
+- dodać przycisk do sortowania listy
+- słowa kóre pokazuja sie na liście mają być posortowane wg alfabetu
+-
