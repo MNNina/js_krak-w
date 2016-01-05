@@ -40,11 +40,12 @@ $(document).ready(function() {
                 "left": -currentPicture * pictureWidth + "px"
 
             }, 1000, function(){
-                //z prędkością 1000milisekund jeżeli początkowa wartość jest taka sama jak dlugośc obrazków minus 1
+                //z prędkością 1000milisekund
+                // jeżeli nasza początkowa wartość jest taka sama jak dlugośc obrazków ale z -1 wartością to:
                 if(currentPicture === pictures.length -1){
-                    //to nasza poczatkowa wartość równa się jeden
+                    //to: nasza poczatkowa wartość równa się jeden
                     currentPicture =1;
-                    //a nasz ul przesuwa się w lewo minus jedna wartość początkowa * szerokość plus px
+                    //a nasz ul(czyli lista z obrazkami) przesuwa się w lewo --- minus jedną wartość początkową * szerokość + px(pixele)
                     ul.css("left", -currentPicture *pictureWidth + "px");
 
                 }

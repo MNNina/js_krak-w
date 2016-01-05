@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
             //po najechaniu myszką na tooltipList ma wykonać się event
         tooltipList[i].addEventListener("mouseover", function(event){
 
-            //tworzymy zemienna i nadajemy jej dataset.text
+            //tworzymy zemienna i nadajemy jej dataset.text this
             var tooltipText = this.dataset.text;
 
             //stwarzamy nowy element span

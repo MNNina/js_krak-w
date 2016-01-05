@@ -3,18 +3,25 @@
  */
 document.addEventListener("DOMContentLoaded", function(){
 
-    var inputText = document.querySelector("#text");
-
-    function getAlertText(){
-        return inputText.value;
-    };
-
     var addWordButton = document.querySelector("#addWordButton");
+    var inputText = document.querySelector("#inputText");
+    var placeNewText = document.querySelector("#placeNewText");
+    //console.log(placeNewText);
 
-    addWordButton.addEventListener("click", function(event){
-        var message = getAlertText();
-        alert(message);
-  });
+    function getAlertText() {
+        return inputText.value;
+        //console.log(listInputText);
+    }
+        addWordButton.addEventListener("click", function(event){
+            var message = getAlertText();
+            placeNewText.innerHTML = message;
+            //console.log(newLi);
+            var newLi = document.createElement("LI");
+            newLi.insertBefore(document.createTextNode(message));
+            inputText.appendChild(newLi);
+
+        });
 
 
 });
+
